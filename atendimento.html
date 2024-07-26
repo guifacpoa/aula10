@@ -1,4 +1,35 @@
 <!DOCTYPE html>
+<style>
+    header{
+        height: 20%;
+        width: 100%;
+        background-color: yellow;
+        
+    }
+    main{
+        
+        width: 15%;
+        float: left;
+        background-color: gray;
+        margin-top: 3em;
+    }
+    table{
+        border-collapse: collapse;
+        text-align: left;
+        display: inline-block;
+    }
+    input, textarea{
+        display: inline-block;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    textarea{
+        height: 10em;
+    }
+    .row{
+        overflow: hidden;
+    }
+</style>
 <html>
     <body>
         <header>
@@ -27,7 +58,26 @@
                     <td>Telefone</td>
                     <td>(54) 1111-2222</td>
                 </tr>
+            </table>
         </header>
+        <main>
+            <div class="row">
+                <form action="#" method="post">
+                    <label for="name">Nome</label>
+                    <input placeholder="Nome Completo" type="text" id="user" name="user" autofocus>
+
+                    <label for="email">Email</label>
+                    <input placeholder="Seu email" type="email" id="email" name="email" autofocus>
+
+                    <label for="assunto">Assunto</label>
+                    <input placeholder="Assunto da mensagem" type="text" id="Assunto" name="Assunto" autofocus>
+
+                    <label for="mensagem">Digite a sua mensagem</label>
+                    <textarea name="mensagem" id="mensagem"></textarea>
+                    <input type="submit" value="Enviar" class="botao-form">
+                </form>
+            </div>
+        </main>
 
     </body>
 </html>
